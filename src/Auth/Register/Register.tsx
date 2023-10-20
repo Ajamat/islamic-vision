@@ -18,7 +18,7 @@ interface IFormValue {
 }
 const Register: FC<RegisterProps> = () => {
     const navigate = useNavigate()
-    const url = `http://localhost:3000/api/register`;
+    const url = `http://localhost:5000/api/auth/register`;
     const initialValues: IFormValue = {
         username: "",
         email: "",

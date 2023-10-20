@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 
 interface PrayerTimeProps {}
-
 const PrayerTime: FC<PrayerTimeProps> = () => {
+    const d = Date()
     return (
         <>
         <div className='w-full h-full flex justify-center items-center mt-20'>
@@ -12,7 +12,7 @@ const PrayerTime: FC<PrayerTimeProps> = () => {
                         <h1>Prayer Times in India</h1>
                     </div>
                     <div>
-                        10 October,2023
+                        {d} 
                     </div>
                 </div>
                 <div className='flex h-[200px] gap-3 justify-center items-center'>

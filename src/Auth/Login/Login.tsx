@@ -14,7 +14,7 @@ interface LoginProps { }
 
 const Login: FC<LoginProps> = () => {
     const nevigate = useNavigate()
-    const url = `http://localhost:3000/api/login`;
+    const url = `http://localhost:5000/api/auth/login`;
     const initialValues = {
         email: "",
         password: ""
