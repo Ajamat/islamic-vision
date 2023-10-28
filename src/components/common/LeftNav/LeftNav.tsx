@@ -15,7 +15,7 @@ const LeftNav: FC<LeftNavProps> = () => {
          <aside   >
                 <div className="h-full overflow-y-auto bg-primary scrollbar-none">
 
-                    <div className={`h-[100%] flex flex-col justify-start absolute sm:static z-40 bg-teal-700 rounded-sm overflow-hidden ${sidebarOpen ? 'w-20' :'w-48'}`}>
+                    <div className={`h-[100%] flex flex-col justify-start absolute sm:static z-40 bg-teal-700 rounded-sm overflow-hidden ${sidebarOpen ? 'w-16' :'w-48'}`}>
                         <p className='text-white flex justify-center items-center text-center cursor-pointer text-lg' onClick={showButton}>Islamic</p>
                         <ul className=" pb-[50px]">
 

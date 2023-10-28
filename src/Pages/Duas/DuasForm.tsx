@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Field, Form, Formik } from 'formik';
 import { useEffect, type FC, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import * as Yup from 'yup';
 
 interface DuasFormProps { }
@@ -13,6 +13,7 @@ interface ICreateValue {
 
 const DuasForm: FC<DuasFormProps> = () => {
     const [edit, setEdit] = useState<ICreateValue>()
+    const nevigate = useNavigate()
     const { id } = useParams();
     const url = `http://localhost:5000/api/dua/createdua`;
     const initialValues: ICreateValue = {
@@ -33,6 +34,7 @@ const DuasForm: FC<DuasFormProps> = () => {
 
         })
         console.log(values)
+        nevigate('/home/duas')
     }
     useEffect(() => {
 

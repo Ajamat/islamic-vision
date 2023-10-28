@@ -5,11 +5,28 @@ interface IslamicPlacesProps {}
 const IslamicPlaces: FC<IslamicPlacesProps> = () => {
     return (
         <>
-        <div className='w-32 py-10 px-10 bg-slate-300'>
-            {/* <a href="https://www.madinashareef.com/">jkljlk</a> */}
-            <a href="https://www.w3schools.com" target="_self">Visit W3Schools</a>
+      <div className='w-full h-screen'>
+        <div className='w-full h-full flex gap-1 items-center justify-center'>
+        <div className='w-36 h-14 px-10 bg-slate-300 flex items-center' >
+            <a href="https://www.madinashareef.com/" target='_self' className=''>Madina</a>
 
         </div>
+        <div className='w-36 h-14 px-10 bg-slate-300 flex items-center' >
+            <a href="https://www.visitsaudi.com/en/see-do/destinations/makkah" target='_self' className=''>Makkah</a>
+
+        </div>
+        <div className='w-36 h-14 px-10 bg-slate-300 flex items-center' >
+            <a href="https://www.visitsaudi.com/en/see-do/destinations/makkah" target='_self' className=''>Makkah</a>
+
+        </div>
+        <div className='w-36 h-14 px-10 bg-slate-300 flex items-center' >
+            <a href="https://www.visitsaudi.com/en/see-do/destinations/makkah" target='_self' className=''>Makkah</a>
+
+        </div>
+
+        </div>
+
+      </div>
         </>
     );
 }
